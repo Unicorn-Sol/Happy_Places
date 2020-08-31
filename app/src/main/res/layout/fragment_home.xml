@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_margin="8dp"
+    android:layout_height="match_parent"
+    tools:context=".HomeFragment"
+    android:orientation="horizontal">
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/recycler_view_only_one"
+        android:visibility="gone"
+        tools:visibility="gone"/>
+    
+    <TextView
+        android:id="@+id/tvNoHappyPlaces"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_centerInParent="true"
+        android:layout_margin="12dp"
+        android:gravity="center"
+        tools:visibility="visible"
+        android:text="No happy places Yet. Tap plus button at end of screen to add a new hppy place"
+/>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/addFab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="15dp"
+        android:src="@drawable/ic_baseline_add_36" />
+</RelativeLayout>
